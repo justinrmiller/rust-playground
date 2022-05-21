@@ -9,5 +9,9 @@ pub fn guessing_game() {
 
     io::stdin().read_line(&mut guess).expect("Failed to read line");
 
-    println!("You guessed: {}", guess);
+    let trimmed = guess.trim();
+    match trimmed.parse::<u32>() {
+        Ok(i) => println!("Your input integer: {}", i),
+        Err(..) => println!("Not an integer: {}", trimmed),
+    };
 }
