@@ -11,3 +11,9 @@ Cargo.lock
 
 # IntelliJ IDEA
 .idea/
+
+# Mac
+.DS_Store
+
+images/
+output_thumbnails/

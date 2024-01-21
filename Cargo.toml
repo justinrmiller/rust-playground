@@ -2,4 +2,12 @@
 name = "rust-playground"
 version = "0.1.0"
 authors = ["Justin Miller <justinrmiller@gmail.com>"]
-edition = "2018"
+edition = "2021"
+
+[dependencies]
+image = "0.24.8"
+rayon = "1.8.1"
+tonic = "0.10"
+prost = "0.12"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+tonic-build = "0.10.2"
